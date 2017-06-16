@@ -1,0 +1,31 @@
+[class^="chart"] div {
+  height: 10vh;
+  font: 1.25em sans-serif;
+  text-align: right;
+  padding: .5em;
+  margin: .25em;
+  color: #000;
+}
+
+#slide-out {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+main {
+  min-height: 80vh;
+  padding-top: 1.5em;
+}
+
+
+
+#ready {
+  padding-top: 1.5em;
+}
+
+
+.wrp {
+ width: 250px;
+  overflow:hidden;
+  height: 350px; /* it is only important to be bigger then parent for one image width size */
+}
