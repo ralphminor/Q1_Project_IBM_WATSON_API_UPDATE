@@ -1,2 +1,123 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+
+<body>
+    <header>
+      <nav class="teal">
+          <div class="container nav-wrapper">
+            <a href="#!" class="brand-logo center">The NewsAPI Plus IBM Watson &reg; Emotion Analysis</a>
+
+          </div>
+        </nav>
+    </header>
+
+    <main class="container">
+      <div class="center">
+        <h5>A powerful and fast news service with access to over 60 top news services.</h5>
+        <h5>Plus, utilize IBM Watson's Sentiment analysis to preview the dominant emotions before choosing a story.</h5>
+      </div>
+
+      <ul id="slide-out" class="teal side-nav grey-text text-lighten-4">
+        <li><strong>INSTRUCTIONS:</strong></li>
+        <li>Step1:</li>
+        <li>Choose a news source form the list of over 60 of the top news services.  You'll then be able to view up to 10 of the latest top news stories from your favorite source.</li>
+        <li>Step 2:</li>
+        <li>Choose to either read the stories by clicking the <strong>'LINK TO STORY'</strong> to view the article in a new tab, or click <strong>'EMOTION ANALYSIS'</strong> to have the article analyzed 'on-demand' by IBM's Watson and the analysis results delivered immediately on-screen.  Choose a different source at any time.</li>
+        <li>With emotion analysis you'll know more about the story to help you decide if its the kind of news you're in the mood to read.</li>
+      </ul>
+      <div class="center">
+      <a href='#' class="button-collapse waves-effect waves-light btn-large" data-activates="slide-out">Click for more details</a>
+      </div>
+
+      <h5 id="ready" class="center"> Ready?  Choose your news source to begin!</h5>
+
+      <section class="row">
+      </section>
+      <section class="container">
+          <form>
+            <section>
+              <div class="row">
+                <div id="select1" class="input-field col s4 offset-s4">
+                  <select>
+                    <option value="" disabled selected>Choose the news source to browse:</option>
+                    <option value="abc-news-au">ABC News (AU) general</option>
+                    <option value="ars-technica">Ars Technica technology</option>
+                    <option value="associated-press">Associated Press general</option>
+                    <option value="bbc-news">BBC News general</option>
+                    <option value="bbc-sport">BBC Sport sport</option>
+                    <option value="bloomberg">Bloomberg business</option>
+                    <option value="business-insider">Business Insider business</option>
+                    <option value="business-insider-uk">Business Insider (UK) business</option>
+                    <option value="buzzfeed">Buzzfeed entertainment</option>
+                    <option value="cnbc">CNBC business</option>
+                    <option value="cnn">CNN general</option>
+                    <option value="daily-mail">Daily Mail entertainment</option>
+                    <option value="engadget">Engadget technology</option>
+                    <option value="entertainment-weekly">Entertainment Weekly entertainment</option>
+                    <option value="espn">ESPN sport</option>
+                    <option value="espn-cric-info">ESPN Cric Info sport</option>
+                    <option value="financial-times">Financial Times business</option>
+                    <option value="football-italia">Football Italia sport</option>
+                    <option value="fortune">Fortune business</option>
+                    <option value="four-four-two">FourFourTwo sport</option>
+                    <option value="fox-sports">Fox Sports sport</option>
+                    <option value="google-news">Google News general</option>
+                    <option value="hacker-news">Hacker News technology</option>
+                    <option value="ign">IGN gaming</option>
+                    <option value="independent">Independent general</option>
+                    <option value="mashable">Mashable entertainment</option>
+                    <option value="metro">Metro general</option>
+                    <option value="mirror">Mirror general</option>
+                    <option value="mtv-news">MTV News music</option>
+                    <option value="mtv-news-uk">MTV News (UK) music</option>
+                    <option value="national-geographic">National Geographic science-and-nature</option>
+                    <option value="new-scientist">New Scientist science-and-nature</option>
+                    <option value="newsweek">Newsweek general</option>
+                    <option value="new-york-magazine">New York Magazine general</option>
+                    <option value="nfl-news">NFL News sport</option>
+                    <option value="polygon">Polygon gaming</option>
+                    <option value="recode">Recode technology</option>
+                    <option value="reddit-r-all">Reddit /r/all general</option>
+                    <option value="reuters">Reuters general</option>
+                    <option value="sky-news">Sky News general</option>
+                    <option value="sky-sports-news">Sky Sports News sport</option>
+                    <option value="talksport">TalkSport sport</option>
+                    <option value="techcrunch">TechCrunch technology</option>
+                    <option value="techradar">TechRadar technology</option>
+                    <option value="the-economist">The Economist business</option>
+                    <option value="the-guardian-au">The Guardian (AU) general</option>
+                    <option value="the-guardian-uk">The Guardian (UK) general</option>
+                    <option value="the-hindu">The Hindu general</option>
+                    <option value="the-huffington-post">The Huffington Post general</option>
+                    <option value="the-lad-bible">The Lad Bible entertainment</option>
+                    <option value="the-new-york-times">The New York Times general</option>
+                    <option value="the-next-web">The Next Web technology</option>
+                    <option value="the-sport-bible">The Sport Bible sport</option>
+                    <option value="the-telegraph">The Telegraph general</option>
+                    <option value="the-times-of-india">The Times of India general</option>
+                    <option value="the-verge">The Verge technology</option>
+                    <option value="the-wall-street-journal">The Wall Street Journal business</option>
+                    <option value="the-washington-post">The Washington Post general</option>
+                    <option value="time">Time general</option>
+                    <option value="usa-today">USA Today general</option>
+                  </select>
+                  <label></label>
+                </div>
+              </div>
+            </section>
+          </form>
+      </section>
+
+      <section id="articlesList" class="row">
+      </section>
+
+    </main>
+
+    <footer class="page-footer teal lighten-1">
+        <div class="footer-copyright teal">
+          <div class="container">
+            © 2016 Ralph Minor
+          </div>
+        </div>
+    </footer>
+
+    <script src="/javascripts/main.js" charset="utf-8"></script>
+  </body>
