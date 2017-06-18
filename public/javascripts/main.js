@@ -110,6 +110,7 @@ $(document).ready(function () {
       var $div5 = $("<div>").addClass("card-content");
       var $div6 = $("<div>").addClass("card-action");
       var $img = $("<img>").attr("src", $urlImg);
+      $img.css("height", "300px");
       $img.css("width", "300px");
 
       $div2.css("overflow", "hidden");
