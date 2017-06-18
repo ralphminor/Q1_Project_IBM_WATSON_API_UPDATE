@@ -68,15 +68,19 @@ $(document).ready(function () {
   //  It hits the newsapi and receive an object of top news articles (max 10);
   function getNews(source) {
     localStorage.clear();
-    var urlBase="https://newsapi.org/v1/articles?source="
-    urlBase += source + "&sortBy=top&apiKey=b9e8f0369e2343549280be54e86a74f9";
-
-    $.get(urlBase, function(artObj) {
-        localStorage.setItem("articles", artObj);
-        addArticles(artObj);
-    }).fail(function() {
-        displayError();
-    });
+    var urlBase = '/news';
+    $.ajax({
+      contentType: 'application/json',
+      dataType: 'json',
+      data: JSON.stringify({ "source": source }),
+      processData: false,
+      url: urlBase,
+      type: 'POST',
+      success: function (data) {
+        localStorage.setItem("articles", data);
+        addArticles(data);
+        }
+      })
   }
 
   // The addArticles function receives the new articles object and dynamically
